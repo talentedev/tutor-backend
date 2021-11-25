@@ -1,0 +1,82 @@
+# This file contains all available configuration options
+# with their default values.
+
+# options for analysis running
+run:
+  deadline: 2m
+
+  # exit code when at least one issue was found, default is 1
+  issues-exit-code: 1
+
+
+  # which dirs to skip: they won't be analyzed;
+  # can use regexp here: generated.*, regexp is applied on full path;
+  # default value is empty list, but next dirs are always skipped independently
+  # from this option's value:
+  #   	vendor$, third_party$, testdata$, examples$, Godeps$, builtin$
+  skip-dirs:
+    - vendor
+    - clients
+    - pkg/identity
+
+  skip-files:
+    - internal/logging/rollbar.go
+    # Skipping test files, mock files, and test helpers
+    - '.*_test.go'
+    - '.*test_helpers.go'
+    - '.*mock_repo.go'
+    - 'internal/registry/init.go'
+
+issues:
+  # List of regexps of issue texts to exclude, empty list by default.
+  # But independently from this option we use default exclude patterns,
+  # it can be disabled by `exclude-use-default: false`. To list all
+  # excluded by default patterns execute `golangci-lint run --help`
+  exclude:
+    - G501
+    - G401
+    # smahr 6/1 - ignoring (math/rand instead of crypto/rand) (gosec) G404
+    - G404
+    - SA9003
+  exclude-use-default: true
+  max-same-issues: 0 # disable, show everything
+
+  exclude-rules:
+    - path: cmd/syncerator/
+      linters:
+        - deadcode
+        - unused
+    # Exclude some linters from running on tests files.
+    - path: _test\.go
+      linters:
+        - scopelint
+        - gosec
+
+    - path: internal/application/
+      linters:
+        - stylecheck
+linters-settings:
+  gocritic:
+    # Which checks should be disabled; can't be combined with 'enabled-checks'; default is empty
+    disabled-checks:
+      - ifElseChain
+  wsl:
+    strict-append: false
+
+linters:
+  enable-all: true
+  disable:
+    - goconst
+    - lll
+    - gofmt
+    - gochecknoglobals
+    - gochecknoinits
+    - dupl
+    - goimports
+    - gocognit
+    - gocyclo
+    # After first release, we should remove godox--it checks for TODO/FIXME
+    - godox
+    - gomnd
+    - funlen
+fast: false

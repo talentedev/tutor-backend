@@ -1,0 +1,47 @@
+app:
+  listen: 0.0.0.0:5050
+  data: ./uploads
+  search_miles: 50
+  env: next
+  debug: true
+
+storage:
+  uri: mongodb://localhost:27017/learnt
+  database: learnt
+  user:
+  password:
+  ssl: false
+  certificate:
+  timeout: 5
+
+security:
+  token: 
+
+websocket:
+  origins: 
+
+payments:
+  commission: 30
+  student_referral_reward: 10
+  student_signup_reward: 10
+  tutor_referral_reward: 50
+
+mail:
+  smtp:
+    host: smtp.google.com
+    user: test@gmail.com
+    pass: test@gmail.com
+  from:
+    email: hello@learnt.io
+    name: Learnt
+
+lessons:
+  advance_duration: 1m
+
+service:
+  google:
+    key: 
+    secret: 
+
+dummy:
+  dummy_token: test

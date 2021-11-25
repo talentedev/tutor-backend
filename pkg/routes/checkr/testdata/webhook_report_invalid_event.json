@@ -1,0 +1,32 @@
+{
+  "id": "507f1f77bcf86cd799439011",
+  "object": "foo",
+  "type": "report.completed",
+  "created_at": "2014-01-18T12:34:00Z",
+  "webhook_url": "https://yourcompany.com/checkr/incoming",
+  "data": {
+    "object": {
+      "id": "4722c07dd9a10c3985ae432a",
+      "object": "report",
+      "uri": "/v1/reports/532e71cfe88a1d4e8d00000d",
+      "created_at": "2014-01-18T12:34:00Z",
+      "received_at": "2014-01-18T12:34:00Z",
+      "status": "clear",
+      "package": "driver_pro",
+      "source": "api",
+      "candidate_id": "e44aa283528e6fde7d542194",
+      "ssn_trace_id": "539fd88c101897f7cd000001",
+      "sex_offender_search_id": "539fd88c101897f7cd000008",
+      "national_criminal_search_id": "539fd88c101897f7cd000006",
+      "county_criminal_search_ids": [
+        "539fdcf335644a0ef4000001",
+        "532e71cfe88a1d4e8d00000c"
+      ],
+      "state_criminal_search_ids": [
+        "539fdcf335644a0ef4000003",
+        "532e71cfe88a1d4e8d000004"
+      ],
+      "motor_vehicle_report_id": "539fd88c101897f7cd000007"
+    }
+  }
+}

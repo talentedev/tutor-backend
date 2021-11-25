@@ -1,0 +1,230 @@
+{
+  "lesson-noti-tutor-no-show-tutor": {
+    "variables": [
+      "tutor_name",
+      "student_name"
+    ],
+    "body": "Hi tutor_name,\n\nUh oh! You missed your lesson with student_name. Missed lessons can result in lowering your tutor ranking and are not paid\n\nhttps://learnt.io/tutor-payment-policy.\n\nIs everything ok? Let us know if we can help."
+  },
+  "lesson-noti-tutor-no-show-student": {
+    "variables": [
+      "student_name"
+    ],
+    "body": "Hi student_name,\n\nWe're so sorry your tutor wasn't able to make it to today's lesson. Of course, you will not be charged for the lesson.\n\nCan we help you find another tutor? Let us know!"
+  },
+  "you-re-late-and-first-name-is-waiting": {
+    "variables": [
+      "first_name",
+      "other_name",
+      "classroom_url"
+    ],
+    "body": "Hi first_name,\n\nYou're late for your lesson with other_name. They just selected to wait 5 more minutes. Please get there ASAP.\n\nclassroom_url"
+  },
+  "your-scheduled-lesson-is-starting": {
+    "variables": [
+      "first_name",
+      "other_name",
+      "classroom_url"
+    ],
+    "body": "Hi first_name,\n\nYour scheduled lesson starts in 2 minutes.\n\nclassroom_url"
+  },
+  "your-profile-is-incomplete": {
+    "variables": [
+      "first_name"
+    ],
+    "body": "Hi first_name,\n\nYour profile will not appear on tutor search results until the following criteria are met:\n\n- Photo added to profile.\n- At least one subject added.\n- Availability added.\n\nhttps://learnt.io/account"
+  },
+  "admin-review-notification": {
+    "variables": [
+      "student_name",
+      "tutor_name",
+      "private_notes",
+      "tutor_profile"
+    ],
+    "body": "Hi there,\n\nstudent_name has left a review about a meeting with tutor_name with the following private notes:\n\nprivate_notes\n\nClick on the button below to view tutor_name's profile:\n\ntutor_profile"
+  },
+  "affiliate-payment-no-bank-account": {
+    "variables": [
+      "first_name",
+      "referral_name",
+      "payment_amount",
+      "bank_account_link"
+    ],
+    "body": "Hi first_name,\nYippee! referral_name who signed up via your affiliate link met for a lesson and you have earned payment_amount. We cannot pay you until you add a bank account to your account.\n\nbank_account_link"
+  },
+  "affiliate-payment-pending": {
+    "variables": [
+      "first_name",
+      "student_name",
+      "tutor_name",
+      "lesson_day",
+      "payment_amount",
+      "lesson_history"
+    ],
+    "body": "Hi first_name,\n\nHurrah! Payment is processing for student_name's meeting with tutor_name on lesson_day.\n\nYour payment of payment_amount is pending and the account on file should be credited within the next 7 business days. For details, see your invitees' lesson_history.\n\nThanks for being a trusted affiliate of Learnt!"
+  },
+  "affiliate-user-signed-up": {
+    "variables": [
+      "first_name",
+      "refer_user",
+      "user_type"
+    ],
+    "body": "Hi first_name,\nWahoo! refer_user signed up as a user_type via your affiliate link, and you will receive 15% of their transactions for the next 90 days. People like you make this app awesome and the world a smarter place. Keep up the good work. Thank you!"
+  },
+  "affiliate-welcome-to-learnt": {
+    "variables": [
+      "first_name",
+      "dashboard_url"
+    ],
+    "body": "Hi first_name!\nWelcome to Learnt.\nWe're an online marketplace where eager minds can connect with verified tutors, instantly. Tutors sell tutoring lessons to make the sharing of knowledge seamless.\nHere’s how you can get started…\nSpread the Word\nYou're an influencer. You can use your unique sharing link to invite tutors and students to Learnt. You will receive 15% of the lesson's sale for 90 days.\nLeverage Your Network, Make Money\nYou can use all media to spread your influence. Social media, emails, old-fashioned word of mouth, or even posting flyers at your local community center.\nComprehensive Dashboard\nTrack all user signups and engagement directly on your dashboard. Access reports on their lesson history and your payments.\ndashboard_url"
+  },
+  "background-check-complete": {
+    "variables": [
+      "tutor_name",
+      "checkr_candidate"
+    ],
+    "body": "Hi there,\n\ntutor_name's background check has completed.\n\nReview the background check\n\ncheckr_candidate"
+  },
+  "lesson-note-created": {
+    "variables": [
+      "first_name",
+      "tutor_profile_url",
+      "created_by",
+      "lesson_url",
+      "lesson_subject",
+      "starts_at",
+      "note",
+      "lesson_notes_url"
+    ],
+    "body": "Hey first_name,\nTutor (tutor_profile_url) created_by Student created_by just created a note for (lesson_url) lesson_subject lesson starting starts_at\n\nNote: note\n\nSee notes or answer\n\nlesson_notes_url"
+  },
+  "new-application-submitted": {
+    "variables": [
+      "tutor_name",
+      "pending_tutors"
+    ],
+    "body": "Hi there,\n\nJust wanted to notify you that tutor_name submitted an application to join Learnt! Please review tutor_name's application.\n\nView the Application\n\npending_tutors"
+  },
+  "recover-password": {
+    "variables": [
+      "first_name",
+      "change_password_url"
+    ],
+    "body": "Hi first_name,\nPlease click the button below to change your password.\nchange_password_url"
+  },
+  "student-cancelled-lesson-with-tutor": {
+    "variables": [
+      "tutor_name",
+      "student_name",
+      "day_time",
+      "chat_url"
+    ],
+    "body": "Hi tutor_name,\n\nYour lesson with student_name on day_time has been cancelled. Message student_name to try again!\n\nMessage student_name\n\nchat_url"
+  },
+  "student-cancels-within-24-hours": {
+    "variables": [
+      "tutor_name",
+      "student_name",
+      "day_time"
+    ],
+    "body": "Hi there,\n\nJust wanted to alert you that student_name cancelled the lesson with tutor_name on day_time within 24 hours. Please investigate the cancellation and contact student_name if necessary."
+  },
+  "student-proposed-lesson": {
+    "variables": [
+      "tutor_name",
+      "student_name",
+      "day_time",
+      "calendar_url"
+    ],
+    "body": "Hi tutor_name,\n\nstudent_name booked a lesson with you on day_time. Nice work! Remember, if this no longer works for you, please cancel the lesson and notify your student ASAP.\n\ncalendar_url"
+  },
+  "student-welcome-to-tutor-app": {
+    "variables": [
+      "first_name",
+      "dashboard_url"
+    ],
+    "body": "Hi first_name!\nWelcome to Learnt.\nWe're a web app for students across the world. Hungry minds build geniuses, and through your support, you are empowering people to continue teaching, learning and growing!\nHere’s how you can get started…\nBrowse Tutor Profiles\nUse our search to find tutors near you! Slim pickings in an obscure subject? Expand your search to tutors who can meet online.\nMessage Tutors\nWe are the first tutoring platform that allows you to message tutors and ensure they are the right fit before you enter your payment information. What ya waitin' for? Start chatting!\nRefer Friends\nEarn learning credit! Invite your friends to Learnt in exchange for credits: $10 to your friends and $10 to you! We’ve got your back.\ndashboard_url"
+  },
+  "subject-education-submitted-for-verification": {
+    "variables": [
+      "tutor_name",
+      "verification_submission",
+      "pending_verification"
+    ],
+    "body": "Hi there,\n\ntutor_name submitted verification_submission for verification. Please login and approve or decline the verification request.\n\nRespond to Verification Request\n\npending_verification"
+  },
+  "tutor-application-approved": {
+    "variables": [
+      "first_name",
+      "url_with_token"
+    ],
+    "body": "Congratulations first_name!\nOur team has reviewed your application and we're excited to showcase your profile on the platform. Welcome to Learnt! Please complete your account using the button below:\n\nurl_with_token\n\nRefer Your Students\nIf you are working with students via other platforms, you can invite them to join Learnt. You won't be charged a fee for students who sign up via your referral link.\nComplete Your Profile\nPlease fill out each field of your profile so students can find you. Accurately complete each section to highlight your expertise in the subjects you teach. Upload a clear profile photo to help students feel more comfortable when they request a session with you."
+  },
+  "tutor-cancels-within-24-hours": {
+    "variables": [
+      "tutor_name",
+      "student_name",
+      "day_time"
+    ],
+    "body": "Hi there,\n\nJust wanted to alert you that tutor_name cancelled the lesson with student_name on day_time within 24 hours. Please investigate the cancellation and contact student_name."
+  },
+  "tutor-cancels": {
+    "variables": [
+      "tutor_name",
+      "student_name",
+      "day_time"
+    ],
+    "body": "Hi there,\n\nJust wanted to alert you that tutor_name cancelled the lesson with student_name on day_time. Please investigate the cancellation and contact student_name to see if you can help."
+  },
+  "tutor-proposed-lesson-change": {
+    "variables": [
+      "student_name",
+      "tutor_name",
+      "chat_url"
+    ],
+    "body": "Hi student_name,\n\ntutor_name submitted a lesson change. Please note, this lesson will pending until you confirm it in the app. Click on the button below to confirm the lesson:\n\nchat_url"
+  },
+  "tutor-proposed-lesson": {
+    "variables": [
+      "first_name",
+      "tutor_name",
+      "day_time",
+      "chat_url"
+    ],
+    "body": "Hi student_name,\n\ntutor_name submitted a lesson request on day_time. Click on the button below to accept or reject the lesson\n\nchat_url"
+  },
+  "tutor-rejected": {
+    "variables": [
+      "first_name"
+    ],
+    "body": "Hi first_name,\nUnfortunately, you were not accepted."
+  },
+  "verify-email": {
+    "variables": [
+      "first_name",
+      "verify_email_url"
+    ],
+    "body": "Hi first_name,\n\nWelcome to Learnt! In order to get started, we need you to verify your email address.\n\nverify_email_url"
+  },
+  "we-are-reviewing-your-application": {
+    "variables": [
+      "first_name"
+    ],
+    "body": "Hi first_name, Thank you for applying to be a tutor on Learnt! Learnt is a space for tutors to list their specialties and connect with students instantly for lessons online or in person.\nWe are currently reviewing your application.\nYou will be notified via email if you are approved as a tutor. Due to the high volume of applicants, at this time we will only be contacting those who are approved. Feel free to reach out to hiring@learnt.io if you have any questions.\nLearn on!"
+  },
+  "you-ve-been-invited-to-join-ta": {
+    "variables": [
+      "full_name",
+      "promo_url"
+    ],
+    "body": "Yippee!\n\nfull_name invited you to join Learnt, an online tutoring service that allows students to connect instantly with verified tutors.\n\nYou can apply to be a tutor and teach, or create a student account and learn with tutors in a variety of subjects. Tutor profiles are showcased to students who meet for lessons online or in person.\nWe're glad to have you on the team.\n\nJoin Us\n\npromo_url"
+  },
+  "tutor-online-now": {
+    "variables": [
+      "first_name",
+      "tutor_name",
+      "tutor_profile"
+    ],
+    "body": "Hi first_name,\n\ntutor_name is online now!\n\ntutor_profile"
+  }
+}
